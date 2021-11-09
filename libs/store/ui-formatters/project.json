@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/store/ui-formatters",
+  "sourceRoot": "libs/store/ui-formatters/src",
+  "prefix": "bghoard",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/store/ui-formatters"],
+      "options": {
+        "jestConfig": "libs/store/ui-formatters/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/store/ui-formatters/src/**/*.ts",
+          "libs/store/ui-formatters/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

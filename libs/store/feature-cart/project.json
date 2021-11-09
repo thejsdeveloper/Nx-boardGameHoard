@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/store/feature-cart",
+  "sourceRoot": "libs/store/feature-cart/src",
+  "prefix": "bghoard",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/store/feature-cart"],
+      "options": {
+        "jestConfig": "libs/store/feature-cart/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/store/feature-cart/src/**/*.ts",
+          "libs/store/feature-cart/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

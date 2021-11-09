@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/store/feature-details",
+  "sourceRoot": "libs/store/feature-details/src",
+  "prefix": "bghoard",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/store/feature-details"],
+      "options": {
+        "jestConfig": "libs/store/feature-details/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/store/feature-details/src/**/*.ts",
+          "libs/store/feature-details/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

@@ -11,6 +11,12 @@
     "review-ui-tile": "libs/review/ui-tile",
     "review-util-formatter": "libs/review/util-formatter",
     "store": "apps/store",
-    "store-e2e": "apps/store-e2e"
+    "store-data-access-cart": "libs/store/data-access-cart",
+    "store-data-access-games": "libs/store/data-access-games",
+    "store-e2e": "apps/store-e2e",
+    "store-feature-cart": "libs/store/feature-cart",
+    "store-feature-details": "libs/store/feature-details",
+    "store-feature-list": "libs/store/feature-list",
+    "store-ui-formatters": "libs/store/ui-formatters"
   }
 }

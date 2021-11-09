@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/store/data-access-games",
+  "sourceRoot": "libs/store/data-access-games/src",
+  "prefix": "bghoard",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/store/data-access-games"],
+      "options": {
+        "jestConfig": "libs/store/data-access-games/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/store/data-access-games/src/**/*.ts",
+          "libs/store/data-access-games/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}
