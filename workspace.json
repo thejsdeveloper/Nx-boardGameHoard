@@ -9,6 +9,8 @@
     "review-feature-details": "libs/review/feature-details",
     "review-feature-list": "libs/review/feature-list",
     "review-ui-tile": "libs/review/ui-tile",
-    "review-util-formatter": "libs/review/util-formatter"
+    "review-util-formatter": "libs/review/util-formatter",
+    "store": "apps/store",
+    "store-e2e": "apps/store-e2e"
   }
 }
