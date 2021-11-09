@@ -4,6 +4,8 @@
     "api": "apps/api",
     "api-interfaces": "libs/api-interfaces",
     "reaview": "apps/reaview",
-    "reaview-e2e": "apps/reaview-e2e"
+    "reaview-e2e": "apps/reaview-e2e",
+    "review-ui-tile": "libs/review/ui-tile",
+    "review-util-formatter": "libs/review/util-formatter"
   }
 }
