@@ -57,6 +57,9 @@
         "production": {
           "browserTarget": "store:build:production"
         },
+        "options": {
+          "proxyConfig": "apps/reaview/proxy.conf.json"
+        },
         "development": {
           "browserTarget": "store:build:development"
         }
