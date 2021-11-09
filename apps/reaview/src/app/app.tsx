@@ -1,21 +1,21 @@
-import React, { useEffect, useState } from 'react';
-// import { Message } from '@bghoard/api-interfaces';
-import { Game } from '@bghoard/api-interfaces';
+import React from 'react';
+import { BrowserRouter, Route } from 'react-router-dom';
+import { ReviewFeatureDetails } from '@bghoard/review/feature-details';
+import { ReviewFeatureList } from '@bghoard/review/feature-list';
+
 export const App = () => {
-  const [game, setGame] = useState<Game[]>([]);
-
-  useEffect(() => {
-    fetch('/api/game')
-      .then((r) => r.json())
-      .then(setGame);
-  }, []);
-
   return (
     <>
-      <div style={{ textAlign: 'center' }}>
-        <h1>Board Game Hoard: Review</h1>
-      </div>
-      <div>{JSON.stringify(game)}</div>
+      <BrowserRouter basename="/review">
+        <h1 style={{ textAlign: 'center' }}>Board Game Hoard: Review</h1>
+        <Route exact path="/" render={() => <ReviewFeatureList />} />
+        <Route
+          path="/:game"
+          render={({ match }) => (
+            <ReviewFeatureDetails gameId={match.params.game} />
+          )}
+        />
+      </BrowserRouter>
     </>
   );
 };

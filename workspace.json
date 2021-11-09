@@ -5,6 +5,9 @@
     "api-interfaces": "libs/api-interfaces",
     "reaview": "apps/reaview",
     "reaview-e2e": "apps/reaview-e2e",
+    "review-data-access-games": "libs/review/data-access-games",
+    "review-feature-details": "libs/review/feature-details",
+    "review-feature-list": "libs/review/feature-list",
     "review-ui-tile": "libs/review/ui-tile",
     "review-util-formatter": "libs/review/util-formatter"
   }
