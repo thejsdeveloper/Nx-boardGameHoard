@@ -1,26 +1,21 @@
 import React, { useEffect, useState } from 'react';
-import { Message } from '@bghoard/api-interfaces';
-
+// import { Message } from '@bghoard/api-interfaces';
+import { Game } from '@bghoard/api-interfaces';
 export const App = () => {
-  const [m, setMessage] = useState<Message>({ message: '' });
+  const [game, setGame] = useState<Game[]>([]);
 
   useEffect(() => {
-    fetch('/api')
+    fetch('/api/game')
       .then((r) => r.json())
-      .then(setMessage);
+      .then(setGame);
   }, []);
 
   return (
     <>
       <div style={{ textAlign: 'center' }}>
-        <h1>Welcome to reaview!</h1>
-        <img
-          width="450"
-          src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png"
-          alt="Nx - Smart, Extensible Build Framework"
-        />
+        <h1>Board Game Hoard: Review</h1>
       </div>
-      <div>{m.message}</div>
+      <div>{JSON.stringify(game)}</div>
     </>
   );
 };
